@@ -9,7 +9,7 @@ require 'ternary_types'
 
 T = TernaryTypes::True.instance
 M = TernaryTypes::Maybe.instance
-F = TernaryTypes::Flase.instance
+F = TernaryTypes::False.instance
 
 !T # => #<TernaryTypes::False:0x007feccc7c4938>
 !M # => #<TernaryTypes::Maybe:0x007feccc7b61f8>
