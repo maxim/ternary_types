@@ -7,10 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "ternary_types"
   spec.version       = TernaryTypes::VERSION
   spec.authors       = ["Maxim Chernyak"]
-  spec.email         = ["max@bitsonnet.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["madfancier@gmail.com"]
+  spec.summary       = %q{Use ternary types in your ruby apps.}
+  spec.description   = 'Provides ternary singletons True, False, and Maybe '\
+    'with ==,!,&,|,^ operators implemented according to three-value logic.'
+  spec.homepage      = "https://github.com/maxim/ternary_types"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
