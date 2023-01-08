@@ -94,7 +94,7 @@ class TernaryTypesTest < MiniTest::Test
     assert_true  Ternary(T),       'Ternary(T)'
     assert_maybe Ternary(M),       'Ternary(M)'
     assert_false Ternary(F),       'Ternary(F)'
-    assert_maybe Ternary(:maybe),  'Ternary(:maybe)'
+    assert_true  Ternary(:maybe),  'Ternary(:maybe)'
     assert_true  Ternary(:object), 'Ternary(:object)'
     assert_false Ternary(false),   'Ternary(false)'
     assert_false Ternary(nil),     'Ternary(nil)'

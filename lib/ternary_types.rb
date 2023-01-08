@@ -6,14 +6,10 @@ module TernaryTypes
     module_function
 
     def Ternary(value)
-      if [True, False, Maybe].any?{|c| value.is_a?(c)}
-        value
-      elsif value == :maybe
-        Maybe.instance
-      elsif value
-        True.instance
-      else
-        False.instance
+      case value
+      when True, False, Maybe; value
+      when nil, false; False.instance
+      else; True.instance
       end
     end
   end
