@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'minitest/autorun'
 require 'ternary_types'
 
-class TernaryTypesTest < MiniTest::Unit::TestCase
+class TernaryTypesTest < MiniTest::Test
   T = TernaryTypes::True.instance
   F = TernaryTypes::False.instance
   M = TernaryTypes::Maybe.instance
