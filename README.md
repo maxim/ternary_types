@@ -13,7 +13,7 @@ F = TernaryTypes::False.instance
 
 !T # => #<TernaryTypes::False:0x007feccc7c4938>
 !M # => #<TernaryTypes::Maybe:0x007feccc7b61f8>
-T == F # => #<TernaryTypes::True:0x007feccc7bc670>
+T == F # => #<TernaryTypes::False:0x007feccc7c4938>
 M == T # => #<TernaryTypes::Maybe:0x007feccc7b61f8>
 M == M # => #<TernaryTypes::Maybe:0x007feccc7b61f8>
 T == T # => #<TernaryTypes::True:0x007feccc7bc670>
